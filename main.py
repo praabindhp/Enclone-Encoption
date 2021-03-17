@@ -23,7 +23,7 @@ list_of_column_names = list(df.columns)
 random_names = []
 for header in list_of_column_names: # Encopted List With Random Names
     random_names.append(names.get_first_name())
-print(random_names)
+# print(random_names)
 
 # Converting List To String
 changed_header_initial = ''
@@ -43,3 +43,13 @@ with open(outputFileName, "w") as outfile:
             outfile.write(changed_header_initial+'\n')
         else:
             outfile.write(line)
+
+# For Identification Purposes
+# Storing The Header & Randomly Generated Names As A Dictionary 
+res = {} 
+for key in list_of_column_names: 
+    for value in random_names: 
+        res[key] = value 
+        random_names.remove(value) 
+        break
+print ("dict : " +  str(res))
