@@ -1,0 +1,25 @@
+Enclone Encoption
+
+The Algorithm :
+Task/Program - 1 :: Encoption
+
+Step-1: Start
+Step-2: Create The First List l1, Which Stores The Name In Header
+Step-3: Loop Till End Of File
+	Step-3.1: Iterate The List l1[n]
+		Step-3.1.1: Assign Each Element Of The List l1 With The Unique Name
+		Step-3.1.2: Store This Element : Unique Name As A Pair For Reference
+Step-4: Stop
+Task/Program - 2 :: Assignment
+
+Step-1: Start
+Step-2: Create The First List l1, Which Stores The Name In Content
+Step-3: Create The Second List l2, Which Stores The Encopted Names
+Step-4: Loop The Line in CSV_Reader
+	Step-4.1: Store The Line[6] in s1
+	Step-4.2: Check if l1[0] in s1
+		Step-4.2.1: Replace l1[0] with l2[0]
+		Step-4.2.2: Store The Modified Content From Step-4.2.1 To s2
+		Step-4.2.3: Write s2 Content To Line[6]
+		Step-4.2.4: Append Lines To New CSV File
+Step-5: Stop
